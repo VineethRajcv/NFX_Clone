@@ -11,7 +11,7 @@ function Banner() {
 
         axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
             const r=Math.floor(Math.random() * (19 + 1));
-            console.log(response.data.results[r])
+            
             setMovie(response.data.results[r])
         })
     
